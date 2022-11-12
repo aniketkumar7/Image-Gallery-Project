@@ -1,0 +1,180 @@
+:root {
+    --primary-gray: #024848;
+    --gray-md: #2f3031;
+    --gray-light: #d7bb9e;
+    --secondary-color: #dd9060;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    font-family: "Montserrat", sans-serif;
+    background-image: url("./images/sean-oulashin-KMn4VEeEPR8-unsplash.jpg"); 
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+    padding: 0; 
+    
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.profile>img {
+    width: 200px;
+    height: 212px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.profile>img:hover {
+    filter: none;
+    transition: all .4s ease;
+}
+
+h1 {
+    color: var(--primary-gray);
+    font-size: 1.9rem;
+    font-weight: 500;
+    background: transparent;
+    padding: 0.6rem 0;
+}
+
+.profile p {
+    color: rgb(35, 33, 33);
+    display: inline-block;
+    background: transparent;
+    font-size: 1.4rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--gray-light);
+    height: 70px;
+    padding: auto;
+    border-radius: 20px;
+    margin-top: 2rem;
+    font-size: 17px;
+    transition: all .4s ease;
+}
+
+.card:hover {
+    background-color: var(--secondary-color);
+    color: rgb(41, 31, 34);
+}
+
+.card span {
+    font-weight: 500;
+}
+
+.card p {
+    color: var(--gray-md);
+    background: transparent;
+    font-weight: 520;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 18px;
+    grid-row-gap: 18px;
+    width: auto;
+    height: auto;
+    margin: 2rem 1.5rem;
+}
+
+
+
+.div4 {
+    grid-area: span 2 / auto / auto / span 1;
+}
+
+.div5 {
+    grid-area: span 2 / auto / auto / span 2;
+}
+.div12 {
+    grid-area: span 2 / auto / auto / span 2;
+}
+.div16 {
+    grid-area: span 2 / auto /auto/ span 2;
+}
+.div21 {
+    grid-area: span 2 / auto /auto/ span 2;
+}
+.div25 {
+    grid-area: span 2 / auto /auto/ span 2;
+}
+.div27 {
+    grid-area: span 2 / auto /auto/ span 2;
+}
+.div31 {
+    grid-area: span 2 / auto /auto/ span 2;
+}
+.div32 {
+    grid-area: span 2 / auto /auto/ span 2;
+}
+.div36 {
+    grid-area: span 2 / auto /auto/ span 2;
+}
+.div41 {
+    grid-area: span 2 / auto /auto/ span 2;
+}
+
+
+
+.container img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 14px 10px 29px -13px rgba(0, 0, 0, 0.68);
+    -webkit-box-shadow: 14px 10px 29px -13px rgba(0, 0, 0, 0.68);
+    -moz-box-shadow: 14px 10px 29px -13px rgba(0, 0, 0, 0.68);
+    transition: all .5s ease;
+}
+
+.container img:hover {
+    transform: scale(1.1);
+}
+
+@media (min-width: 750px) {
+    header {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .container {
+        margin: 2.5rem 8rem;
+        grid-column-gap: 26px;
+        grid-row-gap: 26px;
+    }
+}
