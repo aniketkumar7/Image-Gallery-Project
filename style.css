@@ -157,6 +157,12 @@ h1 {
 .div53 {
     grid-area: span 2 / auto /auto/ span 2;
 }
+.div57 {
+    grid-area: span 2 / auto /auto/ span 2;
+}
+.div62 {
+    grid-area: span 1 / auto /auto/ span 2;
+}
 
 .container img {
     display: block;
