@@ -1,4 +1,4 @@
-# Image Gallery Project
+# Image Gallery Project using HTML and CSS
 
 This repository contains the source code of making Image Gallery using HTML and CSS.<br>
 The Image Gallery consists of beautiful plants images. 
