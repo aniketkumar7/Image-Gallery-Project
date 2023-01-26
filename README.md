@@ -1,4 +1,4 @@
-# Image-Gallery Project
+# Image Gallery Project
 
 This repository contains the source code of making Image Gallery using HTML and CSS.
 <br>
